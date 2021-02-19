@@ -1,6 +1,8 @@
 {
-    "name": "ADA Pre\u00e7o",
-    "short_name": "ADA Pre\u00e7o",
+    "name": "Ada Pre\u00e7o",
+    "short_name": "Ada Pre\u00e7o",
+    "lang": "pt-BR",
+    "start_url": "https://jeferson0993.github.io/ada-preco/index.html",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
