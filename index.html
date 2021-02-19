@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="theme-color" content="#ffffff">
+
+    <title>ADA Preço</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/logo.svg" type="image/png">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+    
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    
+    <!--====== tailwind css ======-->
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    
+    
+</head>
+
+<body>
+    
+    <!--====== HEADER PART START ======-->
+    
+    <header class="header-area">
+        <div class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="w-full">
+                        <nav class="flex items-center justify-between navbar navbar-expand-md">
+                            <a class="mr-4 navbar-brand" href="/">
+                                <img src="assets/images/favicon.ico" alt="Logo">
+                            </a>
+
+                            <button class="block navbar-toggler focus:outline-none md:hidden" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            
+                            <!-- justify-center hidden md:flex collapse navbar-collapse sub-menu-bar -->
+                            <div class="absolute left-0 z-30 hidden w-full px-5 py-3 duration-300 bg-white shadow md:opacity-100 md:w-auto collapse navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none" id="navbarOne">
+                                <ul class="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex">
+                                    <!-- flex flex-row mx-auto my-0 navbar-nav -->
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">INICIO</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#converter">CONVERÇÃO</a>
+                                    </li>
+                                    <li class="nav-item add-button">
+                                        <a href="#">INSTALAR <i class="lni-download"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="items-center justify-end hidden navbar-social lg:flex">
+                                <span class="mr-4 font-bold text-gray-900 uppercase">Social: </span>
+                                <ul class="flex footer-social">
+                                    <li><a href="https://github.com/jeferson0993/"><i class="lni-github-original"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/jeferson0993/"><i class="lni-linkedin-original"></i></a></li>                                  
+                                </ul>
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navgition -->
+
+        <div id="home" class="relative z-10 header-hero" style="background-image: url(assets/images/header-bg.jpg)">
+            <div class="container">
+                <div class="justify-center row">
+                    <div class="w-full lg:w-5/6 xl:w-2/3">
+                        <div class="pt-48 pb-64 text-center header-content">
+                            <h3 class="mb-5 title font-semibold leading-tight text-gray-900 md:text-5xl">
+                                <span class="hidden-sm">1 ADA (um Cardano): </span>
+                                <span id="mainValue"></span>
+                            </h3>
+                            <p class="px-5 mb-10 text-xl text-gray-700">Cardano (ADA) é uma blockchain pública descentralizada e criptomoeda de código aberto. <span class="hidden-sm">Ela está prometendo desenvolver um sistema de contratos inteligentes mais avançados que os protocolos existentes.</span></p>
+                            <ul class="flex flex-wrap justify-center">
+                                <li><a class="mx-3 main-btn gradient-btn page-scroll" href="#converter">Conversões de valores</a></li>
+                            </ul>
+                        </div> <!-- header content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="absolute bottom-0 z-20 w-full h-auto -mb-1 header-shape">
+                <img src="assets/images/header-shape.svg" alt="shape">
+            </div>
+        </div> <!-- header content -->
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+    
+    <!--====== converter PART START ======-->
+
+    <section id="converter" class="converter-area py-120">
+        <div class="container">
+            <div class="justify-center row">
+                <div class="w-full mx-4 lg:w-1/2">
+                    <div class="pb-10 text-center section-title">
+                        <h4 class="title">Conversor de moedas</h4>
+                        <p class="text">É possível realizar conversões de valores de Cardano para real e real para Cardano digitando os valores nos campos.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="justify-center row">
+                <div class="w-full lg:w-2/3">
+                    <div class="converter-form">
+                        <form id="calc-form" action="#" method="post">
+                            <div class="row">
+                                <div class="w-full md:w-1/2">
+                                    <div class="mx-4 mb-6 single-form form-group">
+                                        <label for="ada">Quantidade de ADAs</label>
+                                        <input id="estrangeiro" type="text" name="ada" placeholder="Entre com um valor de adas" value="1">
+                                    </div> <!-- single form -->
+                                </div>
+                                <div class="w-full md:w-1/2">
+                                    <div class="mx-4 mb-6 single-form form-group">
+                                        <label for="real">Valor em reais (apenas nºs)</label>
+                                        <input id="nacional" type="text" name="real" placeholder="Entre com um valor de reais" value="0">
+                                    </div> <!-- single form -->
+                                </div>
+                                <div class="w-full md:w-1/2">
+                                    <div class="mx-4 mb-6">
+                                        <label for="adaBrl">ADA para REAL</label>
+                                        <input type="radio" id="adaBrl" name="optionToConvert" value="ada">
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-1/2">
+                                    <div class="mx-4 mb-6">
+                                        <label for="brlAda">REAL para ADA</label>
+                                        <input type="radio" id="brlAda" name="optionToConvert" value="real">
+                                    </div>
+                                </div>
+                                <p class="mx-4 form-message"></p>
+                                <div class="w-full">
+                                    <div class="mx-4 mt-2 text-center single-form form-group">
+                                        <button type="submit" class="main-btn gradient-btn focus:outline-none">Calcular</button>
+                                    </div> <!-- single form -->
+                                </div>
+                            </div> <!-- row -->
+                        </form>
+                    </div> <!-- row -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== converter PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="bg-gray-100 footer-area">
+        <div class="mb-16 footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="w-full">
+                        <div class="items-end justify-between block mb-8 footer-logo-support md:flex">
+                            <div class="flex items-end footer-logo">
+                                <ul class="flex mt-8 ml-8 footer-social">
+                                    <li><a href="https://github.com/jeferson0993/"><i class="lni-github-original"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/jeferson0993/"><i class="lni-linkedin-original"></i></a></li>
+                                </ul>
+                            </div> <!-- footer logo -->
+                            
+                        </div> <!-- footer logo support -->
+                    </div>
+                </div> <!-- row -->
+                <div class="row">
+                    <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6">
+                        <div class="mb-8 footer-link">
+                            <h6 class="footer-title"><a href="https://cardano.org/">Cardano</a></h6>
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+                        <div class="mb-8 footer-link">
+                            <h6 class="footer-title"><a href="https://yoroi-wallet.com/#/">Yoroi Wallet</a></h6>
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="w-full sm:w-5/12 md:w-1/3 lg:w-1/4">
+                        <div class="mb-8 footer-link">
+                            <h6 class="footer-title"><a href="https://adalite.io/">Adalite Wallet</a></h6>
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="w-full sm:w-7/12 md:w-1/2 lg:w-1/3">
+                        <div class="mb-8 footer-newsletter">
+                            <h6 class="footer-title"><a href="https://jeferson.gq/">Meu Portifólio</a></h6>
+                        </div> <!-- footer newsletter -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+        
+        <div class="bg-blue-900 footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="w-full">
+                        <div class="py-6 text-center">
+                            <p class="text-white">
+                                Feito com <i class="lni-heart-filled"></i> por 
+                                <a class="text-blue-500 duration-300 hover:text-blue-700" rel="nofollow" href="https://github.com/jeferson0993/">Jeferson Ferreira</a>
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TO TOP PART START ======-->
+
+    <a class="back-to-top" href="#"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TO TOP PART ENDS ======-->
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+    <script src="app.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

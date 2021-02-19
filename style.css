@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: auto;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: #f7f7f7;
+  font: 62.5% Sans-serif, Arial, Verdana;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+body:not(.show-content) ul#more-button #more-text {
+  display: block;
+}
+body.show-content ul#more-button #less-text {
+  display: block;
+}
+
+#moeda {
+  margin-top: 5%;
+}
+#moeda > ._adr_abp_iframe {
+  display: none !important;
+}
+
+h1 {
+  background: transparent url(/android-chrome-192x192.png) no-repeat center center;
+  background-size: 122px;
+  height: 122px;
+  margin-right: auto;
+  text-indent: -0b1e2c9px;
+}
+
+#cotacao {
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  word-spacing: -0.3em;
+  margin: 0.7em 0.9em 0.5em 0.9em;
+}
+#cotacao .optional {
+  display: none;
+}
+#cotacao .clearfix {
+  clear: both;
+  height: 0;
+}
+.cotMoeda {
+  font-size: 3em;
+  margin: 0 0.1em;
+  padding: 0 0.07em 0.03em;
+  float: left;
+  clear: left;
+  font-size: 1.4em;
+}
+.cotMoeda:first-child {
+  margin-bottom: 0.3em;
+  margin-top: 0.3em;
+}
+.cotMoeda input {
+  outline: 0;
+}
+.cotMoeda .symbol {
+  display: inline-block;
+  text-align: left;
+  width: 2.1em;
+}
+input#estrangeiro,
+input#nacional {
+  border: 0;
+  font-family: verdana;
+  font-size: 1em;
+  margin-left: 0.1em;
+  text-align: right;
+  width: 2.3em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#obs {
+  font-size: 17px;
+  margin: 7px 0 0 0.2em;
+  text-align: left;
+  word-spacing: 0;
+}
+
+@media (min-width: 641px) {
+  #obs {
+    display: none;
+  }
+}
+
+#conteudo {
+  text-align: left;
+}
+#conteudo,
+#conteudo h2 {
+  font-size: 1.3em;
+}
+#conteudo h2:first-of-type {
+  margin-top: 20px;
+}
+#conteudo h2:not(:first-of-type) {
+  margin-top: 50px;
+}
+#conteudo p {
+  line-height: 21px;
+  margin: 16px 0;
+}
+#conteudo ul.menu {
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+table.conversao {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  margin-top: 16px;
+  width: 100%;
+}
+
+td {
+  border-bottom: 1px solid;
+  font-size: 15px;
+  height: auto;
+  max-height: 30px;
+  padding: 10px;
+}
+
+/* input */
+
+/* celulares */
+.cotMoeda input {
+  min-width: 3.9em;
+  max-width: 3.9em;
+}
+
+@media (min-width: 239px) {
+  .cotMoeda input {
+    min-width: 4.6em;
+    max-width: 4.6em;
+  }
+}
+
+@media (min-width: 299px) {
+  .cotMoeda {
+    font-size: 1.8em;
+  }
+  .cotMoeda input {
+    min-width: 4.7em;
+    max-width: 4.7em;
+  }
+}
+
+@media (min-width: 319px) {
+  .cotMoeda input {
+    min-width: 5.3em;
+    max-width: 5.3em;
+  }
+}
+
+@media (min-width: 359px) {
+  .cotMoeda {
+    font-size: 2em;
+  }
+  .cotMoeda input {
+    min-width: 5.5em;
+    max-width: 5.5em;
+  }
+}
+
+/* ajustes para ios e celulares */
+@media (min-width: 360px) {
+  #topo,
+  #conteudo {
+    font-size: 1.4em;
+    margin: 2% 25px 30px 25px;
+  }
+
+  ul.menu > li {
+    padding-bottom: 9px;
+  }
+
+  #dolarhoje_desktop_banner:empty,
+  #dolarhoje_desktop_bottom:empty,
+  #dolarhoje_desktop_top:empty,
+  #dolarhoje_mobile_banner:empty,
+  #dolarhoje_mobile_bottom:empty,
+  #dolarhoje_mobile_top:empty,
+  #main-banner:empty {
+    display: none;
+  }
+}
+
+/* ajustes para ipad e desktop */
+@media (min-width: 641px) {
+  #moeda {
+    margin-top: 10%;
+  }
+
+  #cotacao {
+    font-size: 1.2em;
+    margin-top: 4%;
+  }
+  #cotacao .optional {
+    display: inline;
+  }
+
+  .cotMoeda {
+    float: none;
+    clear: none;
+    font-size: 3em;
+  }
+  .cotMoeda input,
+  .cotMoeda input#estrangeiro {
+    min-width: 0;
+    max-width: none;
+  }
+  .cotMoeda .symbol {
+    width: auto;
+  }
+  .cotMoeda:first-child {
+    margin: 0 0.1em;
+  }
+
+  body.desktop ul.menu > li {
+    border-bottom: 0;
+    display: inline;
+    margin-right: 0.7em;
+    padding: 0;
+  }
+  body.desktop ul.menu > li:last-child {
+    margin-right: 0;
+  }
+
+  body.desktop #topo {
+    position: absolute;
+    left: 10px;
+    margin: 0;
+    padding-top: 0;
+    top: 10px;
+    width: auto;
+  }
+  body.desktop #topo a {
+    text-decoration: underline;
+  }
+  body.desktop #topo .install a {
+    text-decoration: none;
+  }
+  body.desktop #topo p {
+    margin-top: 7px;
+  }
+  body.desktop #topo ul {
+    line-height: 22px;
+  }
+
+  body.desktop #conteudo {
+    left: 10px;
+    max-width: 550px;
+    position: absolute;
+    right: 10px;
+    top: 101%;
+  }
+  body.desktop #conteudo ul.menu > li {
+    padding-bottom: 10px;
+  }
+
+  body.mobile #topo {
+    margin-top: 28%;
+  }
+}
+
+@media (min-width: 780px) {
+  #cotacao {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 880px) {
+  #cotacao {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 1020px) {
+  #cotacao {
+    font-size: 2em;
+  }
+}
